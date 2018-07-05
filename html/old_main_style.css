@@ -1,0 +1,65 @@
+* {
+  margin:0px;
+  padding:0px;
+  font-family:sans-serif;
+}
+body { /* body controls - includes scaling background image controls*/
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(img/bg2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#sidebar {
+  position:fixed;
+  width:300px;
+  height:100%;
+  left:-290px;
+  transition: all 240ms linear;
+  background: rgba(0,0,0,0.9);
+}
+#sidebar.active {
+  left:0px;
+}
+#sidebar ul li {
+  color: rgba(230, 230, 230,0.9);
+  list-style:none;
+  padding:15px 10px;
+  padding-top: 40px;
+  border-bottom: 2px solid rgba(100, 100, 100, 0.9);
+
+}
+#sidebar a {
+    text-decoration:none;
+    color: white;
+    
+}
+#sidebar a:hover {
+  color: #F4DB1F;
+}
+#sidebar .toggle-btn {
+  position:absolute;
+  left:320px;
+  top:10px;
+}
+#sidebar .toggle-btn span {
+  display:block;
+  width: 30px;
+  height:5px;
+  background:#151719;
+  margin: 5px 0px;
+}
+.profile-pic img  { 
+  width: 180px;
+  padding-left: 55px;
+  padding-top: 30px;
+}
+#username p {
+  padding-left: 10px;
+  padding-top: 20px;
+  color: #F4DB1F;
+  font-weight: bold;
+}

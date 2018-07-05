@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+      <meta charset="charset=iso-8859-1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Register</title>
+      <link rel="stylesheet" href="style.css">
+      <style>
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+      </style>
+  </head>
+  <body>
+
+      <div id="passwrong">
+       <p>Your passwords do not match. Please check that they are the same, and try again.</p>
+       </div>
+      <div class="resetBox registerBox">
+          <a href="index.php"><img src="img/logosmall.png" class="user" alt="TaskTrack"></a>
+          
+          <form action="/scripts/register.php" method="post">
+            <legend>User Registration</legend>
+              <p>First Name</p>
+              <input type ="text" name="first_name" placeholder="Enter First Name" autofocus autocomplete="off" required>
+              <p>Last Name</p>
+              <input type ="text" name="last_name" placeholder="Enter Last Name" autocomplete="off" required>
+              <p>Email</p>
+              <input type ="email" name="email" placeholder="Enter Email" autocomplete="off" required>
+              <p>Password</p>
+              <input type ="password" name="password" placeholder="••••••••" autocomplete="off" required id="pass1" onkeyup="checkPass(); return false;">
+              <p>Confirm Password</p>
+              <input type ="password" name="confirm_password" placeholder="••••••••" autocomplete="off" required id="pass2" onkeyup="checkPass(); return false;">
+              <input type="submit" name="submit" value="Register" id="bnz">
+          </form>
+            <div class="space">
+              <p id="log">Already have an account? <a href="index.php">Log in!</a></p>
+           </div>
+      </div>
+      
+      <script>
+      
+      function checkPass() {
+
+    
+    var pass1 = document.getElementById('pass1');
+    var pass2 = document.getElementById('pass2');
+    var button = document.getElementById("bnz");
+    
+
+    
+    var goodColor = "rgba(0,128,0,0.3)";
+    var badColor = "rgba(255,0,0,0.3)";
+
+    
+  
+    if(pass1.value === '' || pass2.value === '') {
+          document.getElementById('passwrong').style.display = 'none';
+          pass2.style.background = "transparent";
+          pass1.style.background = "transparent";
+    } else {
+          
+      if(pass1.value == pass2.value){
+        pass2.style.backgroundColor = goodColor;
+        pass1.style.backgroundColor = goodColor;
+        document.getElementById('bnz').disabled = false;
+        document.getElementById('passwrong').style.display = 'none';
+      } else{
+        pass2.style.backgroundColor = badColor;
+        pass1.style.backgroundColor = badColor;
+        document.getElementById('bnz').disabled = true;
+        document.getElementById('passwrong').style.display = 'block';
+        
+        }
+  }
+ 
+ 
+  }
+
+
+
+
+
+      </script>
+  </body>
+</html>

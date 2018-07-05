@@ -1,0 +1,165 @@
+body { /* body controls - includes scaling background image controls*/
+height:100%;
+width:100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: url(img/bg2.jpg);
+   background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed; 
+   webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+html{
+height:100%;
+width:100%;
+}
+.loginBox { /* controls positioning and styling of the black rectangle for login controls */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 400px;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,.8);
+}
+.resetBox { /*controls positioning and styling of the black rectangle for reset controls */
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 300px;
+  padding: 80px 40px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,.8);
+}
+.registerBox { /*controls positioning and styling of the black rectangle for register controls */
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 600px;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  background: rgba(0,0,0,.8);
+
+}
+.user { /* controls positioning and size of picture/logo on login page */
+  overflow: hidden;
+  position: absolute;
+  top: calc(-40px);
+  left: calc(8%); 
+}
+h2, legend { /* Controls styling for Log In Here text */
+  margin: 0;
+  padding: 0 0 20px;
+  color: #F4DB1F;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.loginBox p, .resetBox p { /* COntrols styling for any P tags inside the login box */
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #fff;
+}
+#log {
+  font-weight: 500;
+  color: white;
+}
+#log a {
+  font-weight: 900;
+  font-size: 17px;
+  text-decoration: underline;
+}
+.loginBox input, .resetBox input { /*Controls styling of field controls */
+  width: 100%;
+  margin-bottom: 20px;
+}
+.loginBox input[type="email"], .loginBox input[type="password"],
+.resetBox input[type="email"], .resetBox input[type="password"],
+.registerBox input[type="text"] { /* Controls the styling of the Enter Email and Password fields for transparency */
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+::placeholder {
+  color: rgba(255,255,255,.5);
+}
+.loginBox input[type="submit"], .resetBox input[type="submit"] { /*Controls styling for the Sign In button */
+  border: none;
+  outline: none;
+  height: 40px;
+  color: black;
+  font-size: 16px;
+  background: #F4DB1F;
+  cursor: pointer;
+  border-radius: 20px; /* Controls curved look of the button */
+  font-weight: bold;
+}
+.loginBox input[type="submit"]:hover, .resetBox input[type="submit"]:hover { /*Controls the color of the sign in button on mouse hover */
+  background: #B09300;
+  color: #262626;
+}
+.loginBox a, .resetBox a { /*Controls the styligng of the "Trouble Logging In?" text on login */
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+#register { padding-left: 5.6em;}
+.space { padding-top: 3em; padding-bottom: 2em; }
+#forgot { text-align: center; }
+
+
+#error p {
+display: visible;
+background-color: 	#B22222;
+color: white;
+margin:0;
+font-weight:bold;
+font-size:1.3em;
+text-align: center;
+padding-top:1em;
+padding-bottom:1em;
+}
+
+#reset p {
+display: visible;
+background-color: #228B22;
+color: white;
+margin:0;
+font-weight:bold;
+font-size:1.3em;
+text-align: center;
+padding-top:1em;
+padding-bottom:1em;
+
+}
+#passwrong {
+width: 100%;
+display: none;
+background-color: 	#B22222;
+color: white;
+margin:0;
+font-weight:bold;
+font-size:1em;
+text-align: center;
+padding-top:0.5em;
+padding-bottom:0.5em;
+
+}
+
+
