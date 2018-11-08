@@ -1,6 +1,5 @@
 <?php
 session_start();
-date_default_timezone_set('America/Vancouver');
 if(!isset($_SESSION['user'])) {
   header("Location: ../index.php");
   exit;

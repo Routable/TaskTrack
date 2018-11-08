@@ -1,6 +1,5 @@
 <?php
 session_start();
-date_default_timezone_set('America/Vancouver');
 
 /* CREDENTIALS FOR DB AUTHENTICATION -------------------> START */
 $servername = "localhost"; 

@@ -58,8 +58,6 @@ if(!isset($_SESSION['user'])) {
         <input type='password' name='confirmpassword'required style="padding:5px 5px 5px 5px" id="pass2" onkeyup="checkPass(); return false;">
          <br><br>
         <input type="submit" value="Change Password" class="myButton" id="bnz">
-        <br><br>
-        <p> Upon successful password change, you will be redirected back to the log-in screen. 
       </form>
     </div>
 </div>

@@ -1,10 +1,3 @@
-<?php
-session_start();
-if(!isset($_SESSION['user'])) {
-  header("Location: ../index.php");
-  exit;
-}
-?>
 
 <!DOCTYPE html>
 <html>
@@ -133,7 +126,7 @@ color: #333;
 	padding-left: 15px;
 	font-weight: 800;
  font-size: 20px;
-   border-radius: 15px 50px 30px 5px:
+   border-radius: 15px 50px 30px 5px;
    color: black;
 } 
 
@@ -198,19 +191,10 @@ a.mobile {
 
 
 <a href="index.php"><img src="img/logosmall.png" class="user" alt="TaskTrack"></a>
-
-
-
     <div id="box">
      <div class="box-top">Logout</div>
      <div class="box-panel">That email is already in use. Click <a href="http://tasktrack.tk/register.html">here</a> to go back.</div>
     </div>
-
-
-
-
-
-
 
 <script type="text/javascript">
 
