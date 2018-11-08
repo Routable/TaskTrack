@@ -1,3 +1,5 @@
+![alt text](https://github.com/Routable/TaskTrack/blob/master/Screenshots/Homepage.png)
+
 ### PROJECT: TASKTRACK.TK
 ## AUTHORS: Steven Bucholtz, and Brett Steck
 
@@ -5,6 +7,8 @@ When we set out to create our project, we drew inspiration from Support Ticket s
 
 Obviously, creating a full ticket system with the timeframe and resources we have is an impossible task, so we set to create a functioning
 system that had the following (major) functionality:
+
+![alt text](https://github.com/Routable/TaskTrack/blob/master/Screenshots/TasksCreated.PNG)
 
 ### WORKING:
 #1) Hosted on a live server on the Internet. (Working - Researched/Performed by Steven Bucholtz/Brett Steck)
@@ -24,6 +28,8 @@ system that had the following (major) functionality:
 
 #7) Perform automatic queries that occur in the background (without the users knowledge) that calculate averages on response time, etc. (Working - Researched/Performed by Brett Steck)
 
+![alt text](https://github.com/Routable/TaskTrack/blob/master/Screenshots/NewUserDashboard.PNG)
+
 ### NOT WORKING:
 We originally intended to include "Team" functionality, to allow users to be a part of groups. These groups could then be implemented
 to provide viewing/creation permissions on a per-user basis. Shortly into the project, we realized how much work this would actually be, 
@@ -32,6 +38,8 @@ to be added in the future.
 
 In addition, the website is currently considered to be MOBILE UNFRIENDLY. To be blunt, the work put in was quite significant. Spending countless hours creating
 mobile device specific pages for scaling was not something we thought was time efficient, nor required for the project scope.
+
+![alt text](https://github.com/Routable/TaskTrack/blob/master/Screenshots/Signup1.PNG)
 
 ### Other mentions: 
 
